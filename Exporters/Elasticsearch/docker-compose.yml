@@ -1,0 +1,7 @@
+elasticsearch_exporter:
+    image: bitnami/elasticsearch-exporter
+    command:
+      - '--es.uri=https://user:pass@elastic.server.tech:9200'
+    restart: always
+    ports:
+    - "9114:9114"
